@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.Header {
+    width: 100%;
+    height: 170px;
+    .HeaderBlock {
+        width: 70%;
+        max-width: 1300px;
+        margin: 0 auto;
+        .HeaderTDA_Block {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .TDAlogo {
+                width: 190px;
+                height: 84px;
+            }
+
+            .InputSearch {
+                width: 343px;
+                height: 50px;
+                display: flex;
+                input {
+                    width: 290px;
+                    height: 50px;
+                    padding-left: 16px;
+                    border-radius: 6px;
+                    z-index: 0;
+                    border: none;
+                    background-color: #f9f9f9;
+
+                    &::placeholder {
+                        color: #a8a8a8;
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                // кнопка поиска
+                button {
+                    width: 54px;
+                    height: 50px;
+                    background-color: #82ba01;
+                    border: none;
+                    border-radius: 0px 6px 6px 0px;
+                    position: relative;
+                    z-index: 1;
+                // Лупа)
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .ChoiceCity {
+                width: 230px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .PhotoNav {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 100%;
+                    background-color: #f9f9f9;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .FilialSelector {
+                    width: 163px;
+                    height: 55px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    .Label {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 15px;
+                        color: #a8a8a8;
+                    }
+
+                    .CityDropdown {
+                        width: 150px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        .CityButton {
+                            width: 150px;
+                            height: 30px;
+                            background: transparent;
+                            border: none;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-family: 'Poppins', sans-serif;
+                            color: #272727;
+                            padding: 0;
+
+                            span:first-child {
+                                color: #272727;
+                            }
+
+                            img {
+                                width: 24px;
+                                height: 24px;
+                            }
+
+                            .Arrow {
+                                width: 24px;
+                                height: 24px;
+                                display: inline-block;
+                                transition: transform 0.3s ease;
+                            }
+
+                            .ArrowOpen {
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .CityList {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background: white;
+                            border: 1px solid #a4a4a4;
+                            border-radius: 8px;
+                            min-width: 200px;
+                            z-index: 10;
+
+                            .CityItem {
+                                display: flex;
+                                align-items: center;
+                                padding: 10px 14px;
+                                cursor: pointer;
+                                color: #272727;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: 'Poppins', sans-serif;
+
+                                &.Active {
+                                    color: black;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .OurPhone {
+                width: 251px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .PhotoPhone {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 100px;
+                    background-color: #f9f9f9;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .NumberPhone {
+                    width: 193px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    span {
+                        height: 30px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: 'Poppins', sans-serif;
+                        color: #272727;
+                        cursor: pointer;
+                    }
+
+                    span:hover {
+                        color: #000000;
+                    }
+                }
+            }
+
+            .ContactUs {
+                width: 195px;
+                height: 50px;
+                button {
+                    width: 195px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: #6701ba;
+                    cursor: pointer;
+                    img {
+                        width: 26px;
+                        height: auto;
+                    }
+
+                    .Divider {
+                        width: 1px;
+                        height: 40px;
+                        background: #ffffff;
+                    }
+
+                    .ButtonText {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 15px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    .HeaderList {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background: #edf0f6;
+        .CategoryNav {
+            width: 67%;
+            max-width: 1290px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            .CatalogButton {
+                width: 190px;
+                height: 50px;
+                border: none;
+                border-radius: 6px;
+                background: #6701ba;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                cursor: pointer;
+
+                .BurgerIcon {
+                    font-size: 24px;
+                    color: #fff;
+                }
+
+                .Divider {
+                    width: 1px;
+                    height: 40px;
+                    background: #fff;
+                }
+
+                span {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 18px;
+                    color: #ffffff;
+                }
+            }
+
+            .CategoryList {
+                width: 82%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    list-style-type: none;
+                    a {
+                        text-decoration: none;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #272727;
+                    }
+                }
+            }
+        }
+    }
+}
