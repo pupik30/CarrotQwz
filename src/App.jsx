@@ -2,7 +2,8 @@ import React, { StrictMode,} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Common/Header/Header.jsx'
 import Bottom from './Common/Bottom/Bottom.jsx'
-import MainPage from './MainPage/MainPage.jsx'
+// import MainPage from './MainPage/MainPage.jsx'
+import Homepage from './MainPage/Homepage.jsx';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <BrowserRouter>
           <Header/>
             <Routes>
-                <Route path='/' index element = {<MainPage/>}/>
+                <Route path='/' index element = {<Homepage/>}/>
                 {/* <Route path='MainPage' element={<MainPage/>}/> */}
             </Routes>  
           <Bottom />
